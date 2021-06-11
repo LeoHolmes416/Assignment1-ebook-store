@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bookshop.mapper.BookMapper">
+  <resultMap id="BaseResultMap" type="com.example.bookshop.dto.BookDTO">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="book_name" jdbcType="VARCHAR" property="bookName" />
+    <result column="book_author" jdbcType="VARCHAR" property="bookAuthor" />
+    <result column="book_type" jdbcType="INTEGER" property="bookType" />
+    <result column="introduction" jdbcType="VARCHAR" property="introduction" />
+    <result column="book_image" jdbcType="VARCHAR" property="bookImage" />
+    <result column="pages" jdbcType="INTEGER" property="pages" />
+    <result column="type_name" jdbcType="INTEGER" property="typeName" />
+  </resultMap>
+
+
+    <select id="list" resultType="com.example.bookshop.entity.Book">
+      select
+      b.id,b.book_name,b.book_author,b.book_type , b.introduction,b.book_image,b.pages,t.type_name
+      from tb_book b, tb_type t
+      where b.book_type = t.id
+    </select>
+
+    <select id="listBookByUser" resultType="com.example.bookshop.entity.Book">
+      select
+      b.id,b.book_name,b.book_author,b.book_type , b.introduction,b.book_image,b.pages
+      from tb_book b , tb_user_book ub , tb_user u
+      where b.id = ub.bid and u.id=ub.uid
+      and u.id = #{id}
+    </select>
+
+
+</mapper>
