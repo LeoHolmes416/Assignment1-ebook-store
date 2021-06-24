@@ -1,0 +1,27 @@
+
+spring:
+  datasource: # 数据库的数据配置
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # url不用换行
+    url: jdbc:mysql://localhost:3306/bookshop?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
+    username: root
+    password: root
+## mybatis 配置
+mybatis:
+  mapper-locations: classpath:mapper/*.xml # 扫描mybatis的实现dao接口*.xml文件
+  type-aliases-package: com.example.bookshop.entity #实体类取别名
+  configuration:
+    ## 下划线转驼峰配置
+    map-underscore-to-camel-case: true
+## 显示dao 执⾏sql语句
+logging:
+  level:
+    com.example.bookshop.mapper: debug # 改成你的mapper接口文件所在包路径可以打印出sql语句
+#jwt
+jwt:
+  tokenHeader: Authorization  #jwt存储的请求头
+  secret: cereshuzhitingnizhenbcereshuzhitingnizhenbangcereshuzhitingnizhenbangangcereshuzhitingnizhenbang #jwt加密解密使用的密钥
+  expiration: 684888 #jwt超期限时间 60*6*24
+  tokenHead: Bearer #jwt负载中拿到的开头
+server:
+  port: 8084

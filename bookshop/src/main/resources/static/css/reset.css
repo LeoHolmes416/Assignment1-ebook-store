@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: "times new roman";
+	font-size: 12px;
+}
+img{
+	border: none;
+}
+a{
+	border: none;
+	text-decoration: none;
+	color: #000;
+}
+form{
+	height: 0;
+}

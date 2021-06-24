@@ -1,0 +1,179 @@
+.bottom-select{
+	width: 70%;
+	margin: auto;
+	margin-top: 30px;
+}
+.bottom-select-img-logo{
+	height:100%;
+	width: 100%;
+}
+.bottom-select-img{
+	width: 194px;
+	float: left;
+}
+.bottom-select-input{
+	float: left;
+	margin-top: 14px;
+}
+.bottom-select{
+	height: 63.59px;
+}
+.bottom-select-input-input{
+	line-height:63.59px ;
+	width: 80%;
+	float: left;
+}
+.bottom-select-input-sub{
+	float: left;
+	margin-left: 10px;
+}
+.header-bottom{
+	margin-top: 30px;
+	width: 100%;
+	height: 41px;
+}
+.inner{
+	width: 70%;
+	margin: auto;
+	height: 100%;
+}
+.main-list li{
+	float: left;
+	padding-bottom: 11px;
+	border-bottom: 2px solid #ccc;
+	margin-top: ;
+}
+.main-list li a{
+	color: #ccc;
+	text-decoration: none;
+	font-size: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+.main-list{
+	width: 100%;
+	height: 100%;
+	border-bottom: 2px solid #ccc;
+}
+.main-list li:hover{
+	border-bottom: 2px solid #c9483c;
+}
+.red{
+	color: #c9483c;
+}
+.bottom{
+	min-width: 200px;
+	min-height: 360px;
+	width: 100%;
+	margin-top: 20px;
+}
+.bottom-large{
+	width: 70%;
+	margin: auto;
+}
+.bottom-large-list{
+	width: 100%;
+	height: 350px;
+}
+.bottom-large-list-left{
+	float: left;
+	border: 2px solid #ccc;
+	margin-right: 20px;
+}
+.bottom-large-list-img{
+	float: right;
+}
+.img{
+	width: 100%;
+	height: 100%;
+}
+.b-menu-list{
+	padding-top: 5px;
+	border-top: 1px solid #ccc;
+	padding-bottom: 5px;
+}
+.b-menu-list header{
+	font-size: large;
+	margin-left: 9px;
+
+	margin-bottom: 10px;
+}
+.b-menu-list p{
+	margin-bottom: 0px;
+	margin-top: 5px;
+	width: 100%;
+}
+.b-menu-list p a{
+	text-align: center;
+}
+.b-menu-list p a:hover{
+	color: #c9483c;
+	text-decoration: none;
+}
+.a{
+	text-decoration: none;
+}
+.bottom-large-index{
+	margin-top: 30px;
+}
+.bottom-large-index header h5{
+	width: 100%;
+}
+.bottom-large-index-ul{
+	border: 1px solid #ccc;
+}
+.bottom-large-index-ul-in{
+	width: 90%;
+	height: 80%;
+	margin-top: 20px;
+	margin-left: 5%;
+	margin-bottom: 20px;
+}
+.bottom-large-index-ul-in-img{
+	height: 100%;
+	width: 40%;
+	float: left;
+}
+.bottom-large-index-box{
+	height: 200px;
+}
+.bottom-large-index-ul-in-content{
+	width: 55%;
+	height: 100%;
+	float: left;
+	margin-left: 5%;
+}
+.name a{	
+	font-weight: bold;
+	font-size: 20px;
+}
+.name{
+	margin-bottom: 10px;
+}
+.name a:hover{
+	color: #c9483c;
+	text-decoration: none;
+}
+.author{
+	color: darkgray;
+	margin-bottom: 5px;
+}
+.text{
+	height: 80px;
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 5px;
+	color: darkgray;
+}
+.read a:hover{
+	color: #c9483c;
+	text-decoration: none;
+}
+#with-ul{
+	width: 70%;
+	float: left;
+}
+.bottom-large-index-with-ul{
+	width: 30%;
+	float: left;
+}
