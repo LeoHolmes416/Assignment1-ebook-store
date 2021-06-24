@@ -28,6 +28,13 @@ public class LoginController {
         return iAdminService.login(adminLoginParam.getUsername(), adminLoginParam.getPassword(), request);
     }
 
+    @ApiOperation(value = "用户注册")
+    @PostMapping("/regist")
+    public RespBean regist(User adminLoginParam, HttpServletRequest request) {
+
+        return iAdminService.login(adminLoginParam.getUsername(), adminLoginParam.getPassword(), request);
+    }
+
     /**
      * 获取当前用户登陆信息
      *

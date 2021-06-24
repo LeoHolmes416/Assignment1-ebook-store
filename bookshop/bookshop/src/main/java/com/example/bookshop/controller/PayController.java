@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("pay")
-@Api(tags = "PayController",value = "支付控制器")
+@Api(tags = "PayController", value = "支付控制器")
 public class PayController {
     @Autowired
     UBMapper ubMapper;
@@ -22,17 +22,17 @@ public class PayController {
     @PostMapping("/")
     @ApiOperation(value = "测试购买书本")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "uid" , dataType = "Integer"),
-            @ApiImplicitParam(name = "bid" , dataType = "Integer"),
+            @ApiImplicitParam(name = "uid", dataType = "Integer"),
+            @ApiImplicitParam(name = "bid", dataType = "Integer"),
     }
     )
-    public RespBean pay( UB ub){
+    public RespBean pay(UB ub) {
         int i = ubMapper.findDuplicate(ub);
-        if(i>0){
+        if (i > 0) {
             return RespBean.error("已购买");
         }
         ubMapper.insert(ub);
-        return  RespBean.success("成功");
+        return RespBean.success("成功");
     }
 
 
